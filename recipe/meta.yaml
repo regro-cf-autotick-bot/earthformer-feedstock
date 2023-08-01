@@ -46,7 +46,7 @@ requirements:
     - absl-py
     - awscli
     - einops
-    - fvcore
+    # - fvcore
     - graphviz
     - jsonlines
     - networkx
