@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 2
 
 requirements:
   host:
@@ -40,6 +40,22 @@ requirements:
     - tqdm
     - transformers >=4.3.0
     - xarray
+    # additional dependencies
+    # - contextvars
+    # - fairscale
+    - absl-py
+    - awscli
+    - einops
+    # - fvcore
+    - graphviz
+    - jsonlines
+    - networkx
+    - pympler
+    - protobuf
+    - pyarrow
+    - timm
+    - unidiff
+    - yacs
 
 test:
   imports:
