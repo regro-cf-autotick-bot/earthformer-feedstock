@@ -22,6 +22,7 @@ requirements:
     - python >=3.8
     - boto3
     - botocore
+    - earthnet
     - einops >=0.3.0
     - h5py >=2.10.0
     - matplotlib-base
