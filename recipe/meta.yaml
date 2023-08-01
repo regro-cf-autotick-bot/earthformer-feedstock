@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -21,18 +21,25 @@ requirements:
   run:
     - python >=3.8
     - boto3
+    - botocore
+    - einops >=0.3.0
     - h5py >=2.10.0
-    - scipy
-    - tqdm
+    - matplotlib-base
+    - nvidia-apex
+    - omegaconf
+    - netcdf4
+    - opencv
+    - pandas
+    - pytorch
     - regex
     - requests
-    - transformers >=4.3.0
-    - pandas
-    - einops >=0.3.0
+    - scipy
     - tensorboard
-    - omegaconf
-    - matplotlib-base
-    - botocore
+    - pytorch-lightning==1.7.7
+    - torchvision
+    - tqdm
+    - transformers >=4.3.0
+    - xarray
 
 test:
   imports:
