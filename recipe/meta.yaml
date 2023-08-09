@@ -1,5 +1,5 @@
 {% set name = "earthformer" %}
-{% set version = "0.0.4" %}
+{% set version = "0.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/earthformer-{{ version }}.tar.gz
-  sha256: 038b7620e511789d6e8905aaeb687911ecea1c61f09980dddff8d7ad95cb77fa
+  sha256: 6871d7433a0edc062e79db96d2dbe668e892eb0f85236091431cfd047eaace00
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 2
+  number: 0
 
 requirements:
   host:
@@ -57,6 +57,9 @@ requirements:
     - timm
     - unidiff
     - yacs
+    - leafmap
+    - localtileserver
+    - geopandas
 
 test:
   imports:
