@@ -1,5 +1,5 @@
 {% set name = "earthformer" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/earthformer-{{ version }}.tar.gz
-  sha256: 49e35e1cc8d6baa5125e6e01572618e2453548e23a9f171db4a0ee2f220f0091
+  sha256: 8f750a74d42ded9cae0f79105532b9dfd2c8f20d74e31ff6b5894793e9f7dd43
 
 build:
   noarch: python
